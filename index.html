@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover">
+<title>Pooja's Mentor ❤️</title>
+
+<!-- PWA -->
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#141216">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Pooja's Mentor">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" href="icons/favicon-32.png" type="image/png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">
+  <div class="inner">
+    <div class="brand-row">
+      <div class="logo-mark logo-photo">
+        <img src="avatar/avatar-small.png" alt="Pooja" onerror="this.parentElement.innerHTML='&#10084;&#65039;'">
+        <span class="logo-heart">❤️</span>
+      </div>
+      <div class="brand-text">
+        <div class="brand-name">Pooja's Mentor ❤️</div>
+        <div class="brand-tag">your daily companion</div>
+      </div>
+      <button class="icon-btn" id="settingsBtn" aria-label="Settings" title="Settings">⚙️</button>
+    </div>
+
+    <p class="greeting" id="greetingText">Hi Pooja ❤️</p>
+    <p class="mentor-msg" id="mentorLine"></p>
+
+    <div class="tabs" id="tabs">
+      <button class="tab-btn" data-view="home">🏠 Home</button>
+      <button class="tab-btn" data-view="food">✨ Food & Care</button>
+      <button class="tab-btn" data-view="career">💼 Career</button>
+      <button class="tab-btn" data-view="skills">📚 Skills</button>
+      <button class="tab-btn" data-view="tasks">✅ Today</button>
+      <button class="tab-btn" data-view="goals">🎯 Goals</button>
+      <button class="tab-btn" data-view="business">💡 Business</button>
+      <button class="tab-btn" data-view="chat">💬 Chat</button>
+    </div>
+  </div>
+</div>
+
+<div class="app">
+  <section class="view" id="view-home"></section>
+  <section class="view" id="view-food"></section>
+  <section class="view" id="view-career"></section>
+  <section class="view" id="view-skills"></section>
+  <section class="view" id="view-tasks"></section>
+  <section class="view" id="view-goals"></section>
+  <section class="view" id="view-business"></section>
+  <section class="view" id="view-chat"></section>
+</div>
+
+<div class="modal-bg" id="modalBg"><div class="modal" id="modalBody"></div></div>
+<div class="toast" id="toast"></div>
+
+<script src="app.js"></script>
+</body>
+</html>
